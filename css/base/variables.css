@@ -1,0 +1,20 @@
+:root {
+    --primary-color: #437f6e;
+    --secondary-color: #6eb69f;
+    
+    --accent-dark: #326d5d;
+    --accent-medium: #66a18f;
+    --accent-light: #205c4c;
+    
+    --neutral-light: #ead7c0; 
+    --neutral-medium: #686954; 
+    --neutral-dark: #909896; 
+    
+    --highlight-color: #e46404;
+    
+    --font-family: 'Roboto', sans-serif;
+    --font-size: 16px;
+    --background-color: #f4f4f4;
+
+    --new-green: #4a6f56;
+}

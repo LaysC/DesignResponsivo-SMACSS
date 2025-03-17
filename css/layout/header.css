@@ -1,0 +1,102 @@
+header {
+    background-color: var(--primary-color);
+    color: var(--neutral-light); /* Cor de texto mais suave */
+    border-bottom: 2px solid var(--secondary-color);
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px; /* Reduzi a altura do padding para diminuir a altura do header */
+}
+
+.logo {
+    height: 60px; /* Diminuí a altura da logo */
+    display: block;
+    margin-left: 100px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Aumentei um pouco a escala no hover */
+}
+
+.header-nav {
+    margin-right: 100px;
+}
+
+.header-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 30px; /* Aumentei o espaço entre os itens do menu */
+}
+
+.header-nav a {
+    color: var(--neutral-light); /* Alterei para a cor mais suave */
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 15px; /* Aumentei o padding para dar mais espaço */
+    border-radius: 5px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.header-nav a:hover {
+    color: var(--highlight-color); /* Mudando a cor do texto no hover */
+    transform: scale(1.05);
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px; /* Ajustei o padding aqui também */
+    }
+
+    .logo {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+
+    .header-nav {
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-nav ul {
+        flex-direction: column;
+        gap: 25px; /* Aumentei o espaçamento para melhorar o visual */
+    }
+
+    .cta-button {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        height: 50px; /* Reduzi um pouco mais a altura da logo */
+    }
+
+    .header-nav a {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .cta-button {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+}

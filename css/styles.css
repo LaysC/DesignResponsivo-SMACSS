@@ -1,0 +1,14 @@
+@import 'base/reset.css';
+@import 'base/variables.css';
+
+@import 'components/button.css';
+@import 'components/card.css';
+
+@import 'layout/footer.css';
+@import 'layout/header.css';
+@import 'layout/services.css';
+@import 'layout/formulario.css';
+@import 'layout/hero.css';
+@import 'layout/sobre.css';
+@import 'layout/galeria.css';
+@import 'layout/depoimentos.css';
