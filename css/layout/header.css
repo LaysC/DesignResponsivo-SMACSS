@@ -1,29 +1,28 @@
 header {
     background-color: var(--primary-color);
-    color: var(--neutral-light); /* Cor de texto mais suave */
+    color: var(--neutral-light); 
     border-bottom: 2px solid var(--secondary-color);
     width: 100%;
     transition: background-color 0.3s ease, transform 0.3s ease;
     position: relative;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px; /* Reduzi a altura do padding para diminuir a altura do header */
-}
+    padding: 10px 30px; 
 
 .logo {
-    height: 60px; /* Diminuí a altura da logo */
+    height: 60px;
     display: block;
     margin-left: 100px;
     transition: transform 0.3s ease;
 }
 
 .logo:hover {
-    transform: scale(1.1); /* Aumentei um pouco a escala no hover */
+    transform: scale(1.1); 
 }
 
 .header-nav {
@@ -34,22 +33,22 @@ header {
     list-style: none;
     padding: 0;
     display: flex;
-    gap: 30px; /* Aumentei o espaço entre os itens do menu */
+    gap: 30px;
 }
 
 .header-nav a {
-    color: var(--neutral-light); /* Alterei para a cor mais suave */
+    color: var(--neutral-light); 
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding: 8px 15px; /* Aumentei o padding para dar mais espaço */
+    padding: 8px 15px; 
     border-radius: 5px;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .header-nav a:hover {
-    color: var(--highlight-color); /* Mudando a cor do texto no hover */
+    color: var(--highlight-color); 
     transform: scale(1.05);
 }
 
@@ -59,7 +58,7 @@ header {
     .header-container {
         flex-direction: column;
         align-items: flex-start;
-        padding: 15px 20px; /* Ajustei o padding aqui também */
+        padding: 15px 20px; 
     }
 
     .logo {
@@ -75,7 +74,7 @@ header {
 
     .header-nav ul {
         flex-direction: column;
-        gap: 25px; /* Aumentei o espaçamento para melhorar o visual */
+        gap: 25px; 
     }
 
     .cta-button {
@@ -87,7 +86,7 @@ header {
 
 @media (max-width: 480px) {
     .logo {
-        height: 50px; /* Reduzi um pouco mais a altura da logo */
+        height: 50px; 
     }
 
     .header-nav a {
